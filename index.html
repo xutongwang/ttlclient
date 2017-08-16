@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="adlock">
+<head>
+	<meta charset="utf-8" />
+	<title>广东安达综合业务管理平台</title>
+	<meta name="description" content="广东安达综合业务管理平台" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="app/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="app/css/adlock.css" type="text/css" />
+</head>
+<body data-ng-class="{ 'layout-fixed' : app.layout.isFixed, 'aside-collapsed' : app.layout.isCollapsed, 'layout-boxed' : app.layout.isBoxed, 'layout-fs': app.useFullLayout, 'hidden-footer': app.hiddenFooter, 'layout-h': app.layout.horizontal, 'aside-float': app.layout.isFloat}">
+<script src="vendor/angular-1.5.11/angular.js"></script>
+<script src="vendor/angular-ui-router/angular-ui-router.js"></script>
+<!-- lazyload -->
+<script src="vendor/oclazyload/ocLazyLoad.js"></script>
+<script src="app/js/app.js"></script>
+<script src="app/js/constant.js"></script>
+<script src="app/js/router.js"></script>
+<script src="app/js/adlock/services/ui-load.js"></script>
+<!--SERVICES -->
+<script src="app/js/auth.js"></script>
+<script src="app/js/session.js"></script>
+<script src="app/js/adlock/services/sessionInjector.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="app/js/adlock/user/login.js"></script>-->
+<div data-ui-view="" data-autoscroll="false" class="wrapper"></div>
+</body>
+</html>
